@@ -76,6 +76,12 @@ public class EgovSampleController {
 	 * @return "egovSampleList"
 	 * @exception Exception
 	 */
+
+	@RequestMapping(value = "/jinbiotech2.do")
+	public String showIssueList() {
+		return "tiles2";
+	}
+
 	@RequestMapping(value = "/jinbiotech.do")
 	public String selectSampleList(@ModelAttribute("searchVO") SampleDefaultVO searchVO, ModelMap model) throws Exception {
 
