@@ -3,9 +3,10 @@
 <%@ taglib prefix="form"   uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="ui"     uri="http://egovframework.gov/ctl/ui"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="tiles" 	uri="http://tiles.apache.org/tags-tiles" %>
 <%
   /**
-  * @Class Name : egovSampleList.jsp
+  * @Class Name : tilesTeamplate.jsp
   * @Description : Sample List 화면
   * @Modification Information
   *
