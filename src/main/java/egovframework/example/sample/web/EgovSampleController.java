@@ -85,12 +85,18 @@ public class EgovSampleController {
 
 	@RequestMapping(value = "/jinbiotech.do")
 	public String selectSampleList(@ModelAttribute("searchVO") SampleDefaultVO searchVO, ModelMap model) throws Exception {
+		List<?> sampleList = sampleService.selectSampleList(searchVO);
+		model.addAttribute("resultList", sampleList);
 
-		/** EgovPropertyService.sample */
+		return "tiles";
+	}
+
+	/*@RequestMapping(value = "/jinbiotech.do")
+	public String selectSampleList(@ModelAttribute("searchVO") SampleDefaultVO searchVO, ModelMap model) throws Exception {
+
 		searchVO.setPageUnit(propertiesService.getInt("pageUnit"));
 		searchVO.setPageSize(propertiesService.getInt("pageSize"));
 
-		/** pageing setting */
 		PaginationInfo paginationInfo = new PaginationInfo();
 		paginationInfo.setCurrentPageNo(searchVO.getPageIndex());
 		paginationInfo.setRecordCountPerPage(searchVO.getPageUnit());
@@ -108,7 +114,7 @@ public class EgovSampleController {
 		model.addAttribute("paginationInfo", paginationInfo);
 
 		return "tiles";
-	}
+	}*/
 
 	/**
 	 * 글 등록 화면을 조회한다.
