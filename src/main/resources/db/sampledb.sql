@@ -1,7 +1,7 @@
 CREATE MEMORY TABLE SAMPLE(ID VARCHAR(16) NOT NULL PRIMARY KEY,NAME VARCHAR(50),DESCRIPTION VARCHAR(100),USE_YN CHAR(1),REG_USER VARCHAR(10))
 CREATE MEMORY TABLE IDS(TABLE_NAME VARCHAR(16) NOT NULL PRIMARY KEY,NEXT_ID DECIMAL(30) NOT NULL)
 SET SCHEMA PUBLIC
-INSERT INTO SAMPLE VALUES('SAMPLE-00001','Runtime Environment','Foundation Layer','Y','eGov')
+INSERT INTO SAMPLE VALUES('SAMPLE00001','test2-1','Foundation Layer','Y','eGov')
 INSERT INTO SAMPLE VALUES('SAMPLE-00002','Runtime Environment','Persistence Layer','Y','eGov')
 INSERT INTO SAMPLE VALUES('SAMPLE-00003','Runtime Environment','Presentation Layer','Y','eGov')
 INSERT INTO SAMPLE VALUES('SAMPLE-00004','Runtime Environment','Business Layer','Y','eGov')
@@ -114,5 +114,5 @@ INSERT INTO SAMPLE VALUES('SAMPLE-00110','Runtime Environment','Integration Laye
 INSERT INTO SAMPLE VALUES('SAMPLE-00111','Runtime Environment','Integration Layer','Y','eGov')
 INSERT INTO SAMPLE VALUES('SAMPLE-00112','Runtime Environment','Integration Layer','Y','eGov')
 INSERT INTO SAMPLE VALUES('SAMPLE-00113','Runtime Environment','Integration Layer','Y','eGov')
-INSERT INTO SAMPLE VALUES('SAMPLE-00114','Runtime Environment','Integration Layer','Y','eGov')
+INSERT INTO SAMPLE VALUES('SAMPLE-00114','test1-1','Integration Layer','Y','eGov')
 INSERT INTO IDS VALUES('SAMPLE',115)

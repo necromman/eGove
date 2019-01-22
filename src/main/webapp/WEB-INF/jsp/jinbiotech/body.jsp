@@ -10,7 +10,13 @@
     }
 </script>
 <div>
-바디입니다
+    바디입니다
     <a href="javascript:fn_num_two_sel();">2번으로</a>
+    <ul>
+        <c:forEach var="result" items="${resultList}" varStatus="status">
+            <li><c:out value="${result.name}"/></li>
+        </c:forEach>
+    </ul>
+
 </div>
 
