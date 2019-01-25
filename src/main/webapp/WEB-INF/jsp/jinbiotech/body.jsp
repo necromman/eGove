@@ -18,15 +18,13 @@
         </c:forEach>
     </ul>--%>
 
-    <div id="summernote"><p>Hello Summernote</p></div>
+    <textarea name="contents" cols="80" rows="10"></textarea>
     <button class="btn btn-default">디폴트 전송</button>
     <button class="btn btn-primary" type="submit">서브밋 전송</button>
     <button class="btn btn-success" type="button">버튼 전송</button>
-    <script>
-        $(document).ready(function() {
-            $('#summernote').summernote();
-        });
-    </script>
 
+    <script>
+        CKEDITOR.replace('contents');
+    </script>
 </div>
 
