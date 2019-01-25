@@ -12,11 +12,21 @@
 <div>
     바디입니다
     <a href="javascript:fn_num_two_sel();">2번으로</a>
-    <ul>
+    <%--<ul>
         <c:forEach var="result" items="${resultList}" varStatus="status">
             <li><c:out value="${result.name}"/></li>
         </c:forEach>
-    </ul>
+    </ul>--%>
+
+    <div id="summernote"><p>Hello Summernote</p></div>
+    <button class="btn btn-default">디폴트 전송</button>
+    <button class="btn btn-primary" type="submit">서브밋 전송</button>
+    <button class="btn btn-success" type="button">버튼 전송</button>
+    <script>
+        $(document).ready(function() {
+            $('#summernote').summernote();
+        });
+    </script>
 
 </div>
 
