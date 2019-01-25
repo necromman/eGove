@@ -12,11 +12,11 @@
 <div>
     바디입니다
     <a href="javascript:fn_num_two_sel();">2번으로</a>
-    <%--<ul>
+    <ul>
         <c:forEach var="result" items="${resultList}" varStatus="status">
             <li><c:out value="${result.name}"/></li>
         </c:forEach>
-    </ul>--%>
+    </ul>
 
     <textarea name="contents" cols="80" rows="10"></textarea>
     <button class="btn btn-default">디폴트 전송</button>

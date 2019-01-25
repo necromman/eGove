@@ -18,8 +18,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title><spring:message code="title.sample"/></title>
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-    <spring:message code="ck.sources" var="ck"/>
-    <script src="<c:url value='${ck}'/>"></script>
+    <%--<spring:message code='ck.sources' var='ck'/>
+    <script src="<c:url value='${ck}'/>"></script>--%>
+    <script src="<spring:message code='ck.sources'/>"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
 </head>
